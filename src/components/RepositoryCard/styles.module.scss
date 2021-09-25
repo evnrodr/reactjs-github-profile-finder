@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  max-width: 720px;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  border-radius: 5px;
+  background-color: var(--white);
+
+  img {
+    height: 4rem;
+    border-radius: 4rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+
+    &:first-child {
+      cursor: pointer;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+}
