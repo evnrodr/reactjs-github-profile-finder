@@ -31,20 +31,40 @@
       display: inherit;
       justify-content: center;
       gap: 1rem;
+
+      button {
+        padding: 1rem;
+
+        border: none;
+        border-radius: 5px;
+        background-color: var(--black);
+
+        font-weight: bold;
+        color: var(--white);
+
+        &.active {
+          background-color: var(--green);
+        }
+      }
     }
 
-    button {
-      padding: 1rem;
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.8rem;
 
-      border: none;
-      border-radius: 5px;
-      background-color: var(--black);
+      button {
+        margin-bottom: 2rem;
+        padding: 0.8rem;
 
-      font-weight: bold;
-      color: var(--white);
+        border: none;
+        border-radius: 5px;
 
-      &.active {
-        background-color: var(--green);
+        font-weight: bold;
+        color: var(--white);
+
+        background-color: var(--black);
       }
     }
   }

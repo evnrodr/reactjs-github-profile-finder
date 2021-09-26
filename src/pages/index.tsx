@@ -1,10 +1,9 @@
 import Head from "next/head";
+import { GetServerSideProps } from "next";
 
-import { getSession, signIn } from "next-auth/client";
-import { FaGithub } from "react-icons/fa";
+import { getSession } from "next-auth/client";
 
 import styles from "../../styles/home.module.scss";
-import { GetServerSideProps } from "next";
 
 export default function Home() {
   return (

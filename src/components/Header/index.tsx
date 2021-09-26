@@ -1,12 +1,10 @@
-import { useSession } from "next-auth/client";
 import { FaGithub } from "react-icons/fa";
+
 import { SignInButton } from "../SignInButton";
 
 import styles from "./styles.module.scss";
 
 export function Header() {
-  const [session] = useSession();
-
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
