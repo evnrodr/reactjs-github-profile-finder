@@ -30,7 +30,11 @@ export function RepositoriesTable({ repositories }: RepositoriesTableProps) {
               return (
                 <tr key={index}>
                   <td>
-                    <a href={repository.html_url} target="_blank">
+                    <a
+                      href={repository.html_url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {repository.name}
                     </a>
                   </td>

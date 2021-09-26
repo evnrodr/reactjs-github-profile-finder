@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { FaGithub } from "react-icons/fa";
 
 import { SignInButton } from "../SignInButton";
@@ -8,7 +10,7 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <a href="/">
+        <Link href="/">
           <nav>
             <FaGithub size={42} />
             <div>
@@ -16,7 +18,7 @@ export function Header() {
               <p>An easy way to find devs</p>
             </div>
           </nav>
-        </a>
+        </Link>
         <SignInButton />
       </div>
     </header>

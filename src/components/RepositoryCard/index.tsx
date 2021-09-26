@@ -16,7 +16,7 @@ interface RepositoryCardProps {
 
 export function RepositoryCard({ repository }: RepositoryCardProps) {
   return (
-    <Link href={repository.href}>
+    <a href={repository.href} target="_blank" rel="noreferrer">
       <div className={styles.container}>
         <img
           src={`https://github.com/${repository.author}.png`}
@@ -30,6 +30,6 @@ export function RepositoryCard({ repository }: RepositoryCardProps) {
           <p>{repository.description}</p>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
