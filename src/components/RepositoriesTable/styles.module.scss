@@ -1,6 +1,11 @@
 .container {
   margin-top: 1rem;
 
+  .scroll {
+    overflow-y: scroll;
+    height: 32rem;
+  }
+
   table {
     width: 100%;
     border-spacing: 0 0.5rem;
@@ -24,7 +29,11 @@
       font-weight: bold;
       color: var(--dark-gray);
 
-      border-radius: 0.25rem;
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--green);
+      }
     }
   }
 }

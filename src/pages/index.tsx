@@ -16,9 +16,11 @@ export default function Home() {
         <section className={styles.mainSection}>
           <span>Olá dev! 👩‍💻👨‍💻</span>
           <h1>
-            A melhor ferramenta para achar usuários no <span>GitHub</span>!
+            A melhor ferramenta para <br /> achar usuários no{" "}
+            <span>GitHub</span>!
           </h1>
         </section>
+        <img src="/images/research.svg" alt="Trabalho em Equipe" />
       </main>
     </div>
   );

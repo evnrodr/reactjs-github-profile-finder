@@ -16,20 +16,20 @@ interface RepositoryCardProps {
 
 export function RepositoryCard({ repository }: RepositoryCardProps) {
   return (
-    <div className={styles.container}>
-      <img
-        src={`https://github.com/${repository.author}.png`}
-        alt="Imagem do autor"
-        height={42}
-      />
-      <div>
-        <Link href={repository.href}>
+    <Link href={repository.href}>
+      <div className={styles.container}>
+        <img
+          src={`https://github.com/${repository.author}.png`}
+          alt="Imagem do autor"
+          height={42}
+        />
+        <div>
           <p>
             <strong>{repository.author}</strong>/{repository.name}
           </p>
-        </Link>
-        <p>{repository.description}</p>
+          <p>{repository.description}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

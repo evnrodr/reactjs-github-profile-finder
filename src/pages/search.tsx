@@ -33,15 +33,18 @@ export default function SearchPage({ repositories }: SearchPageProps) {
 
   async function handleSearchUser() {
     if (!user) {
-      toast.warn("A busca não pode vazia.", {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
+      toast.warn(
+        "A busca não pode ser vazia. Por favor procure um usuário válido!",
+        {
+          position: "top-right",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
 
       return;
     }
@@ -50,10 +53,10 @@ export default function SearchPage({ repositories }: SearchPageProps) {
       await api.get(`${user}`);
     } catch (error) {
       toast.error(
-        "Este usuário não existe no GitHub. Digite um usuário válido!",
+        "Este usuário não existe no GitHub. Por favor procure um usuário válido!",
         {
           position: "top-right",
-          autoClose: 2000,
+          autoClose: 2500,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -97,7 +100,7 @@ export default function SearchPage({ repositories }: SearchPageProps) {
           <strong>
             Trending <FiTrendingUp />
           </strong>
-          {repositories.map((repository, index) => (
+          {repositories.slice(0, 10).map((repository, index) => (
             <RepositoryCard key={index} repository={repository} />
           ))}
         </section>

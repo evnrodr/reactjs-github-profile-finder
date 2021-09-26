@@ -10,6 +10,8 @@
   border-radius: 5px;
   background-color: var(--white);
 
+  cursor: pointer;
+
   img {
     height: 4rem;
     border-radius: 4rem;
@@ -17,10 +19,6 @@
 
   p {
     margin-bottom: 0.5rem;
-
-    &:first-child {
-      cursor: pointer;
-    }
   }
 
   &:last-child {

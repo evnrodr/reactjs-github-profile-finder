@@ -2,7 +2,7 @@ import Head from "next/head";
 import { GetServerSideProps } from "next";
 import { useState } from "react";
 
-import { FiArrowLeft } from "react-icons/fi";
+import { FiArrowLeft, FiStar, FiUser } from "react-icons/fi";
 import { getSession } from "next-auth/client";
 import { toast } from "react-toastify";
 
@@ -126,7 +126,7 @@ export default function User({ userInfo, userRepos, userStarred }: UserProps) {
               }`}
               onClick={() => setShowStarredRepos(false)}
             >
-              Repositórios do usuário
+              <FiUser size={20} /> Repositórios do usuário
             </button>
             <button
               type="button"
@@ -135,7 +135,7 @@ export default function User({ userInfo, userRepos, userStarred }: UserProps) {
               }`}
               onClick={() => setShowStarredRepos(true)}
             >
-              Repositórios marcados
+              <FiStar size={20} /> Repositórios marcados
             </button>
           </div>
 

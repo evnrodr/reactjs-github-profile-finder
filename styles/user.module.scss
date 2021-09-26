@@ -33,6 +33,10 @@
       gap: 1rem;
 
       button {
+        display: inherit;
+        align-items: center;
+        gap: 0.8rem;
+
         padding: 1rem;
 
         border: none;

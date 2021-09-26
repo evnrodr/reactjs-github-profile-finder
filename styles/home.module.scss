@@ -67,3 +67,10 @@
     color: var(--green);
   }
 }
+
+@media (max-width: 720px) {
+  .contentContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
