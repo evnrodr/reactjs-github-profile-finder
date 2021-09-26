@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Head from "next/head";
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/client";
@@ -8,6 +9,7 @@ import { Header } from "../components/Header";
 
 import styles from "../../styles/search.module.scss";
 import { RepositoryCard } from "../components/RepositoryCard";
+import { useRouter } from "next/router";
 
 type Repository = {
   author: string;
@@ -22,13 +24,20 @@ interface SearchPageProps {
 }
 
 export default function SearchPage({ repositories }: SearchPageProps) {
+  const router = useRouter();
+  const [user, setUser] = useState("");
+
+  function handleSearchUser() {
+    if (!user) return;
+
+    router.push(`/users/${user}`);
+  }
+
   return (
     <>
       <Head>
         <title>Busca | GitProFinder</title>
       </Head>
-
-      <Header />
 
       <main className={styles.container}>
         <h1>
@@ -36,8 +45,15 @@ export default function SearchPage({ repositories }: SearchPageProps) {
         </h1>
 
         <div>
-          <input type="text" placeholder="Busque por um usuário" />
-          <button>Pesquisar</button>
+          <input
+            type="text"
+            placeholder="Busque por um usuário"
+            value={user}
+            onChange={(event) => setUser(event.target.value)}
+          />
+          <button type="button" onClick={handleSearchUser}>
+            Pesquisar
+          </button>
         </div>
 
         <section>

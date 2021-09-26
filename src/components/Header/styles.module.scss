@@ -12,48 +12,16 @@
   align-items: center;
 
   nav {
-    height: 5rem;
-
-    display: inherit;
-    flex-direction: row;
-    align-items: center;
-
-    div {
-      h1,
-      p {
-        margin-left: 1rem;
-      }
-
-      p {
-        font-size: 0.8rem;
-        color: var(--gray);
-      }
-    }
-  }
-
-  .profile {
     display: flex;
-    align-items: center;
     gap: 1rem;
-
-    margin-left: auto;
-    padding: 0.5rem;
-
-    border-radius: 4rem;
-    background-color: var(--black);
-
-    img {
-      height: 2rem;
-      border-radius: 4rem;
-    }
-
-    strong {
-      color: var(--white);
-    }
 
     p {
       font-size: 0.8rem;
       color: var(--gray);
     }
+  }
+
+  button {
+    margin-left: auto;
   }
 }

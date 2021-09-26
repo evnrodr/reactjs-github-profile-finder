@@ -20,16 +20,6 @@ export default function Home() {
             A melhor ferramenta para achar usuários no <span>GitHub</span>!
           </h1>
         </section>
-        <section>
-          <button
-            type="button"
-            className={styles.signInButton}
-            onClick={() => signIn("github")}
-          >
-            <FaGithub color="#ffffff" />
-            SignIn com GitHub
-          </button>
-        </section>
       </main>
     </div>
   );
