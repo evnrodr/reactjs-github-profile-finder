@@ -4,6 +4,7 @@ interface ProfileInfoProps {
   profile: {
     login: string;
     avatar_url: string;
+    html_url: string;
     name: string;
     bio: string;
     public_repos: number;
@@ -19,7 +20,15 @@ export function ProfileInfo({ profile }: ProfileInfoProps) {
         <img src={profile.avatar_url} alt={`Foto de ${profile.name}`} />
 
         <div>
-          {profile.name ? <h1>{profile.name}</h1> : <h1>{profile.login}</h1>}
+          {profile.name ? (
+            <a href={profile.html_url} target="_blank" rel="noreferrer">
+              <h1>{profile.name}</h1>
+            </a>
+          ) : (
+            <a href={profile.html_url} target="_blank" rel="noreferrer">
+              <h1>{profile.login}</h1>
+            </a>
+          )}
           <p>{profile.bio}</p>
         </div>
       </header>

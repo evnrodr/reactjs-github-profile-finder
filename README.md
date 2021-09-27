@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 GitProFinder
 
-## Getting Started
+<p align='center' 
+style='
+display:flex; 
+justify-content: center; 
+align-items: center;'
+>
+    <img src="https://camo.githubusercontent.com/002313a28ac7d09f24e8a70358139bb4f7c2c32eaf83a926e873bedf67b69eac/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f654e41736a4f353574506267616f72376d612f67697068792e676966" width=200 height=200/>
+</p>
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 🌐 Teste a aplicação online!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ei! Você pode testar a aplicação no Vercel neste **[link](https://gitprofinder.vercel.app/)**.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 💻 Tecnologias
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- _Web_: **ReactJS | NextJS**
+- _Autenticação_: **GitHub OAuth**
+- _Hospedagem_: **Vercel**
 
-## Learn More
+## 📂 Lista de Tecnologias / Pacotes
 
-To learn more about Next.js, take a look at the following resources:
+- Pacotes:
+  - ReactJS
+  - NextJS
+  - TypeScript
+  - Axios
+  - Next Auth
+  - React Toastify
+  - SASS
+  - Trending GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙ Como você pode rodar este projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Se você quer rodar este projeto no seu computador, é muito fácil, siga os passos e tudo estará configurado:
 
-## Deploy on Vercel
+1. Execute: $ `git clone` nesse repositório incrível;
+2. Certifique-se de ter o Node/NPM/Yarn instalado em seu computador;
+3. Na pasta do projeto, execute: $ `yarn install`;
+4. Ainda na pasta do projeto, execute: $ <strong>`yarn dev`</strong>;
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Pronto! Agora esse projetão incrível vai estar rodando na sua máquina! 😎
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🖼️ Alguns screenshots da aplicação
+
+<div align='center'>
+    <h3>Home</h3>
+    <img src="https://i.imgur.com/W6ECYSM.png" width=640 height=333 style='margin-bottom:15px'/>
+    <h3>Busca</h3>
+    <img src="https://i.imgur.com/WK29vGi.png" width=640 height=333 style='margin-bottom:15px'/>
+    <h3>Resultados</h3>
+    <img src="https://i.imgur.com/NtAIxaD.png" width=640 height=333 style='margin-bottom:15px'/>
+    <h3>Responsividade</h3>
+    <img src="https://i.imgur.com/dPsLpzE.png" width=249 height=466 style='margin-bottom:15px'/>
+</div>

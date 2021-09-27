@@ -20,6 +20,12 @@
     p {
       font-size: 0.8rem;
       color: var(--gray);
+
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--green);
+      }
     }
   }
 

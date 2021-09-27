@@ -24,53 +24,7 @@
     margin-top: 2.5rem;
 
     span {
-      color: red;
+      color: var(--green);
     }
-  }
-
-  p {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    margin-top: 1.5rem;
-
-    span {
-      color: blue;
-      font-weight: bold;
-    }
-  }
-}
-
-.signInButton {
-  height: 3rem;
-  border-radius: 3rem;
-  background: var(--black);
-  border: 0;
-  padding: 0 1.5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: var(--white);
-
-  font-weight: bold;
-
-  svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem;
-  }
-
-  transition: color 0.2s;
-
-  &:hover {
-    color: var(--green);
-  }
-}
-
-@media (max-width: 720px) {
-  .contentContainer {
-    flex-direction: column;
-    justify-content: center;
   }
 }

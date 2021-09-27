@@ -16,11 +16,14 @@ export default function Home() {
         <section className={styles.mainSection}>
           <span>Olá dev! 👩‍💻👨‍💻</span>
           <h1>
-            A melhor ferramenta para <br /> achar usuários no{" "}
+            A melhor ferramenta para <br /> buscar usuários no{" "}
             <span>GitHub</span>!
           </h1>
         </section>
-        <img src="/images/research.svg" alt="Trabalho em Equipe" />
+        <img
+          src="/images/research.svg"
+          alt="Imagem de uma pessoa pesquisando algo na internet"
+        />
       </main>
     </div>
   );

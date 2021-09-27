@@ -29,10 +29,12 @@
       font-weight: bold;
       color: var(--dark-gray);
 
-      transition: color 0.2s;
+      a {
+        transition: color 0.2s;
 
-      &:hover {
-        color: var(--green);
+        &:hover {
+          color: var(--green);
+        }
       }
     }
   }
